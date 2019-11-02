@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS3 Animation</title>
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: #aa09aa;
+            animation-name: xyz;
+            animation-duration: 12s;
+            /* animation-delay: 4s; */
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+        /* #box {
+            animation: xyz 12s 4s 3;
+        } */
+
+
+        /* Standard syntax */
+        /* @keyframes xyz {
+            from {background-color: #aa09aa; top: 0px; left: 0;}
+            to {background-color: red; top:500px; left: 600px;}
+        } */
+        @keyframes xyz{
+            0%   {background-color: lime; left: 0; top: 0;}
+            25%  {background-color: red; left:600px; top: 0;}
+            50%  {background-color: blue;left: 600px; top: 400px;}
+            100% {background-color: orange; left: 0; top: 0;}
+        }
+
+
+        /* @keyframes xyz {
+            0%   {background-color: lime;}
+            25%  {background-color: red;}
+            50%  {background-color: blue;}
+            100% {background-color: orange;}
+        } */
+
+     
+
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+</html>
